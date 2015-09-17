@@ -6,7 +6,16 @@ based on **Composable Go Services Using Libchan** post by _Brendan Fosberry_ and
 
 You can see [Composable Go Services Using Libchan here](https://blog.codeship.com/composable-go-services-using-libchan/)
 
-### Easy steps (By João Paraná)
+### Very easy steps (By João Paraná)
+
+    cat b
+    go get github.com/joao-parana/msf 
+    go get github.com/joao-parana/libchan
+    go get github.com/docker/spdystream
+    ./b
+
+
+### Easy steps (Deprecated)
 
     export GOPATH=~/
     go get github.com/docker/libchan
