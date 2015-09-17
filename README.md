@@ -1,4 +1,6 @@
-## Banano
+## MSF
+
+based on **Composable Go Services Using libchain** post by _Brendan Fosberry_ and your project [https://github.com/bfosberry/banano](https://github.com/bfosberry/banano)
 
 ### Easy steps (By João Paraná)
 
@@ -10,7 +12,8 @@
     go get github.com/bfosberry/banano/nano
     go run cmd/main.go
 
-if you see the error :
+if you see the error:
+
     # github.com/bfosberry/banano/nano
     ../../../src/github.com/bfosberry/banano/nano/connector.go:36: undefined: spdy.NewClientTransport
 
