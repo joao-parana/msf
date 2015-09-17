@@ -6,8 +6,8 @@ import (
 	"log"
 	"os"
 
-	// "github.com/joao-parana/msf/nano"
-	nano "../nano"
+	// nano "../nano"
+	"github.com/joao-parana/msf/nano"
 )
 
 func main() {
