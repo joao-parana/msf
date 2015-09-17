@@ -7,7 +7,8 @@ import (
 	"net"
 	"os"
 
-	"github.com/docker/libchan/spdy"
+	"github.com/joao-parana/libchan/spdy"
+	// "github.com/docker/libchan/spdy"
 	"github.com/joao-parana/msf/nano"
 	// nano "../nano"
 )

@@ -4,8 +4,10 @@ import (
 	"log"
 	"net"
 
-	"github.com/docker/libchan"
-	"github.com/docker/libchan/spdy"
+	// "github.com/docker/libchan"
+	"github.com/joao-parana/libchan"
+	// "github.com/docker/libchan/spdy"
+	"github.com/joao-parana/libchan/spdy"
 )
 
 func NewLocalRepository() ThingeyRepository {
