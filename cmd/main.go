@@ -4,12 +4,12 @@ package main
 import (
 	"log"
 
-	// "github.com/bfosberry/banano/nano"
+	// "github.com/joao-parana/msf/nano"
 	nano "../nano"
 )
 
 func main() {
-	log.Println("Starting..")
+	log.Println("Starting cmd to test locat ..")
 	repo := nano.NewLocalRepository()
 
 	t1 := &nano.Thingey{
