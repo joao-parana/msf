@@ -5,8 +5,8 @@ import (
 	"errors"
 	"log"
 
-	// "github.com/docker/libchan"
-	"github.com/joao-parana/libchan"
+	"github.com/docker/libchan"
+	// "github.com/joao-parana/libchan"
 )
 
 type SenderFunc func() (libchan.Sender, error)

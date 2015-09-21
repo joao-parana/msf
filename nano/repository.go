@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"errors"
 
-	// "github.com/docker/libchan"
-	"github.com/joao-parana/libchan"
+	"github.com/docker/libchan"
+	// "github.com/joao-parana/libchan"
 )
 
 type ThingeyRepository interface {

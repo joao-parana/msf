@@ -4,8 +4,8 @@ package main
 import (
 	"log"
 
-	"github.com/joao-parana/msf/nano"
-	// nano "../nano"
+	// "github.com/joao-parana/msf/nano"
+	nano "../nano"
 )
 
 func main() {

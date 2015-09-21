@@ -4,10 +4,10 @@ import (
 	"log"
 	"net"
 
-	// "github.com/docker/libchan"
-	"github.com/joao-parana/libchan"
-	// "github.com/docker/libchan/spdy"
-	"github.com/joao-parana/libchan/spdy"
+	"github.com/docker/libchan"
+	// "github.com/joao-parana/libchan"
+	"github.com/docker/libchan/spdy"
+	// "github.com/joao-parana/libchan/spdy"
 )
 
 func NewLocalRepository() ThingeyRepository {
@@ -35,9 +35,11 @@ func NewRemoteRepository(remoteURL string) ThingeyRepository {
 		log.Fatal(err)
 	}
 
-	transport, err := spdy.NewClientTransport(client)
+	provider, err := spdy.NewSpdyStreamProvider(client, false)
+	// transport, err := spdy.NewClientTransport(client)
 	if err != nil {
 		log.Fatal(err)
 	}
+	transport := spdy.NewTransport(provider)
 	return NewThingeyRepository(transport.NewSendChannel, receiver, remoteSender)
 }
